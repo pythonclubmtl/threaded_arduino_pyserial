@@ -8,6 +8,7 @@ import time
 logging.basicConfig(level=logging.DEBUG,
                     format='(%(threadName)-9s) %(message)s',)
 
+# The program variable config.run is changed to True so that threads keep running
 config.run = True
 
 arduino_q = queue.Queue(maxsize=0)
